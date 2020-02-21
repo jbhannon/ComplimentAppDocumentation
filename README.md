@@ -4,12 +4,11 @@ Here is where I will document the creation of my Compliment Giver App.
 
 ## Table of Contents
 
-<ol type="I">
-  <li>[Introduction](#introduction)</li>
-  <li>[Technical Documentation](#technical-documentation)</li>
-  <li>[Art Documentation](#art-documentation)</li>
-  <li>[User Guide](#user-guide)</li>
-</ol>
+1. [Introduction](#introduction)
+2. [Technical Documentation](#technical-documentation)
+3. [Art Documentation](#art-documentation)
+4. [User Guide](#user-guide)
+
 
 ## Introduction
 
