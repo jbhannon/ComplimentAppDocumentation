@@ -7,6 +7,7 @@ In general, each section below will be comprised of various journal-like entries
 ## Table of Contents
 
 1. [Introduction](#introduction)
+    - [January 26th](#january-26th)
 2. [Technical Documentation](#technical-documentation)
 3. [Art Documentation](#art-documentation)
 4. [User Guide](#user-guide)
