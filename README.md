@@ -8,6 +8,10 @@ In general, each section below will be comprised of various journal-like entries
 
 - [Introduction](#introduction)
 - [Technical Documentation](#technical-documentation)
+	- [Failures](#failures)
+	- [Google Sheets to PHP](#google-sheets-to-php)
+	- [PHP to Unity](#php-to-unity)
+	- [Save System](#save-system)
 - [Art Documentation](#art-documentation)
 - [User Guide](#user-guide)
 - [Postmortem](#postmortem)
@@ -101,6 +105,9 @@ friendships.
 
 ## Technical Documentation
 
+#### Failures
+
+#### Google Sheets to PHP
 ```PHP
 $spreadsheet_url="https://docs.google.com/spreadsheets/d/e/2PACX-1vSHvNJFikAJRxgf2V1Uf2yvMUHq56xKQjlIsVLBBM11gdE6-pKRy2ZpybwLyhn-Ew31bfnUraKdFOYi/pub?gid=0&single=true&output=csv";
 
@@ -116,6 +123,7 @@ else
     die("Problem reading csv");
 ```
 
+#### PHP to Unity
 ```C#
  IEnumerator Display()
     {
@@ -148,6 +156,8 @@ else
         }
     }
 ```
+
+#### Save System
 ```C#
 public class ComplimentList : MonoBehaviour
 {
