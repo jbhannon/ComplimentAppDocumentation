@@ -2,23 +2,20 @@
 
 Here is where I will document the creation of my Compliment Giver App.
 
-In general, each section below will be comprised of various journal-like entries as I develope my app.
+In general, each section below will be comprised of various journal-like entries as I develop my app.
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-    - [January 26th](#january-26th)
-2. [Technical Documentation](#technical-documentation)
-3. [Art Documentation](#art-documentation)
-4. [User Guide](#user-guide)
-5. [Postmortem](#postmortem)
+- [Introduction](#introduction)
+- [Technical Documentation](#technical-documentation)
+- [Art Documentation](#art-documentation)
+- [User Guide](#user-guide)
+- [Postmortem](#postmortem)
 
 
 ## Introduction
 
-#### January 26th
-
-Today I wrote and turned in the assignment [_Project Proposal 1_](documentationFiles/projectProposal1.pdf) as a first draft of my idea for the project I will create in this course.
+The first work I did for this project was to complete the assignment [_Project Proposal 1_](documentationFiles/projectProposal1.pdf) which was a first draft of my idea for the project I will create in this course (completed January 26th).
 Below I will display my current answers to the various questions.
 
 > ___What is your overall idea?___
@@ -103,6 +100,142 @@ anyone who wants to use the app can enjoy it and better their relationships or
 friendships.
 
 ## Technical Documentation
+
+```PHP
+$spreadsheet_url="https://docs.google.com/spreadsheets/d/e/2PACX-1vSHvNJFikAJRxgf2V1Uf2yvMUHq56xKQjlIsVLBBM11gdE6-pKRy2ZpybwLyhn-Ew31bfnUraKdFOYi/pub?gid=0&single=true&output=csv";
+
+if(!ini_set('default_socket_timeout', 15)) echo "<!-- unable to change socket timeout -->";
+
+if (($handle = fopen($spreadsheet_url, "r")) !== FALSE) {
+    while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+		echo $data[0] . "\n";
+    }
+    fclose($handle);
+}
+else
+    die("Problem reading csv");
+```
+
+```C#
+ IEnumerator Display()
+    {
+        UnityWebRequest complimentsGet = UnityWebRequest.Get(url);
+        yield return complimentsGet.SendWebRequest();
+
+        if (complimentsGet.isNetworkError)
+        {
+            Debug.Log("Error: " + complimentsGet.error);
+        }
+        else
+        {
+            if (complimentsGet.downloadHandler.text == "")
+            {
+                Debug.Log("No Entries Found");
+            }
+            else
+            {
+                List<string> compliments = new List<string>();
+                foreach (string st in complimentsGet.downloadHandler.text.Split('\n'))
+                {
+                    if (st != "")
+                    {
+                        compliments.Add(st);
+                    }
+                }
+                this.GetComponent<ComplimentList>().compliments = compliments;
+                this.GetComponent<ComplimentList>().SaveList();
+            }
+        }
+    }
+```
+```C#
+public class ComplimentList : MonoBehaviour
+{
+    public List<string> compliments = new List<string>();
+    public List<string> UnusedCompliments = new List<string>();
+    public GameObject ComplimentText;
+
+    public void Display() {
+        if (compliments.Count != 1) {
+            if (UnusedCompliments.Count == 0) {
+                UnusedCompliments = new List<string>(compliments);
+            } 
+            int nextCompliment = Random.Range(0, UnusedCompliments.Count);
+            ComplimentText.GetComponent<TextMeshProUGUI>().text = UnusedCompliments[nextCompliment];
+            UnusedCompliments.RemoveAt(nextCompliment);
+        }
+        
+    }
+
+    public void SaveList()
+    {
+        SaveSystem.SaveList(this);
+        UnusedCompliments = new List<string>();
+        Display();
+    }
+
+    public void LoadList()
+    {
+        ComplimentData data = SaveSystem.LoadList();
+
+        if (!(data is null)) {
+            compliments = data.compliments;
+            Display();
+        }
+        
+    }
+}
+```
+```C#
+[System.Serializable]
+public class ComplimentData
+{
+    public List<string> compliments;
+
+    public ComplimentData (ComplimentList list) {
+        compliments = list.compliments;
+    }
+}
+```
+```C#
+public static class SaveSystem
+{
+
+    public static void SaveList(ComplimentList list)
+    {
+        BinaryFormatter formatter = new BinaryFormatter();
+        string path = Application.persistentDataPath + "/compliments.fun";
+        FileStream stream = new FileStream(path, FileMode.Create);
+
+        ComplimentData data = new ComplimentData(list);
+
+        formatter.Serialize(stream, data);
+        stream.Close();
+    }
+
+    public static ComplimentData LoadList()
+    {
+        string path = Application.persistentDataPath + "/compliments.fun";
+        if (File.Exists(path))
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            FileStream stream = new FileStream(path, FileMode.Open);
+
+            ComplimentData data = formatter.Deserialize(stream) as ComplimentData;
+
+            stream.Close();
+
+            return data;
+        }
+        else
+        {
+            Debug.Log("Save file not found in " + path);
+            return null;
+        }
+    }
+
+}
+```
 
 ## Art Documentation
 
