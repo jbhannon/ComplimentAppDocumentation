@@ -8,6 +8,7 @@ In general, each section below will be comprised of various journal-like entries
 
 - [Introduction](#introduction)
 	- [Project Proposal](#project-proposal)
+	- [Project Proposal Feedback](#project-proposal-feedback)
 - [Technical Process](#technical-process)
 	- [Failures](#failures)
 	- [Google Sheets to PHP](#google-sheets-to-php)
