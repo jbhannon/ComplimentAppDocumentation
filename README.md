@@ -109,7 +109,7 @@ friendships.
 
 #### Project Proposal Feedback
 
-After completing my project proposal, I recieved and documented feedback from my peers. I will document it below:
+After completing my project proposal, I received and documented feedback from my peers. I will document it below:
 
 I answered 5 questions for each peer. The questions were:
 
@@ -179,7 +179,7 @@ The responses were as follows:
 </tr>
 </table>
 
-I took thier comments and used them to better shape my proposal and reprioritize the way I would delegate my time for different parts of the project.
+I took their comments and used them to better shape my proposal and reprioritize the way I would delegate my time for different parts of the project.
 
 ## Technical Process
 
