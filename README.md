@@ -7,17 +7,20 @@ In general, each section below will be comprised of various journal-like entries
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Technical Documentation](#technical-documentation)
+	- [Project Proposal](#project-proposal)
+- [Technical Process](#technical-process)
 	- [Failures](#failures)
 	- [Google Sheets to PHP](#google-sheets-to-php)
 	- [PHP to Unity](#php-to-unity)
 	- [Save System](#save-system)
-- [Art Documentation](#art-documentation)
+- [Art Process](#art-process)
 - [User Guide](#user-guide)
 - [Postmortem](#postmortem)
 
 
 ## Introduction
+
+#### Project Proposal
 
 The first work I did for this project was to complete the assignment [_Project Proposal 1_](documentationFiles/projectProposal1.pdf) which was a first draft of my idea for the project I will create in this course (completed January 26th).
 Below I will display my current answers to the various questions.
@@ -103,13 +106,95 @@ but ultimately I hope to make at least an APK to post online so that my friends 
 anyone who wants to use the app can enjoy it and better their relationships or
 friendships.
 
-## Technical Documentation
+#### Project Proposal Feedback
+
+After completing my project proposal, I recieved and documented feedback from my peers. I will document it below:
+
+I answered 5 questions for each peer. The questions were:
+
+> 1) ___Can your classmate rearticulate back to you what your project is mainly about in 45 seconds to 1 minute?___
+> 2) ___Do they think your project goals sound feasible?___
+> 3) ___Do they think your multimedia tool goals sound feasible?___
+> 4) ___Are there any multimedia tools they could suggest to you to help you in your project?___
+> 5) ___What would they like to see you add, drop, and/or change about your project? Why?___
+
+The responses were as follows:
+
+<table>
+<tr>
+<td>
+<b>Emilie Holtz</b>
+</td>
+<td>
+	
+1) Yes, she was accurate
+			
+2) Project sounds feasible
+
+3) Multimedia tools sound feasible
+
+4) No recommendations for multimedia tools
+
+5) Add seasonal or changing content, keep UI fresh
+
+</td>
+</tr>
+
+<tr>
+<td>
+<b>Logan Couch</b>
+</td>
+<td>
+	
+1) Yes, he understood the concept well enough to repeat it back
+
+2) He thinks the project sounds achievable and not too small
+
+3) He thinks the technologies used sound feasible
+
+4) He didn’t have any recommendations for the multimedia tools
+
+5) He recommended perhaps adding sound effects to make it more fun and game-like
+
+</td>
+</tr>
+<tr>
+<td>
+<b>Diana Eakhshiyar</b>
+</td>
+<td>
+	
+1) She was a little confused about what’s being shared, it was my mistake as I emphasized too much on the documents and not on the app itself.
+
+2) Goal sounds feasible
+
+3) Tools sound feasible
+
+4) No tools suggested
+
+5) She suggested adding more art and making the app feel very loving
+
+</td>
+</tr>
+</table>
+
+I took thier comments and used them to better shape my proposal and reprioritize the way I would delegate my time for different parts of the project.
+
+## Technical Process
+
+Here is where I will document the first half of the creation of this project: the technical process
 
 #### Failures
 
+I started this process
+
+![Google Sheets Try 1](images/googleSheetsTry1.PNG)
+![Google Sheets Try 2](images/googleSheetsTry2.PNG)
+![Google Sheets Try 3](images/googleSheetsTry3.PNG)
+
 #### Google Sheets to PHP
 
-[source](https://community.spiceworks.com/topic/1290489-use-google-spreadsheet-as-data-source-for-webpage)
+[Google Sheets to PHP Tutorial](https://community.spiceworks.com/topic/1290489-use-google-spreadsheet-as-data-source-for-webpage)
 
 ```PHP
 $spreadsheet_url="https://docs.google.com/spreadsheets/d/e/2PACX-1vSHvNJFikAJRxgf2V1Uf2yvMUHq56xKQjlIsVLBBM11gdE6-pKRy2ZpybwLyhn-Ew31bfnUraKdFOYi/pub?gid=0&single=true&output=csv";
@@ -127,7 +212,7 @@ else
 ```
 
 #### PHP to Unity
-[source](https://wiki.unity3d.com/index.php/Server_Side_Highscores)
+[PHP to Unity Tutorial](https://wiki.unity3d.com/index.php/Server_Side_Highscores)
 ```C#
  IEnumerator Display()
     {
@@ -198,8 +283,10 @@ public class ComplimentList : MonoBehaviour
     }
 }
 ```
-[source](https://www.youtube.com/watch?v=XOjd_qU2Ido)
+
 #### Save System
+[Unity Save/Load System](https://www.youtube.com/watch?v=XOjd_qU2Ido)
+
 ```C#
 [System.Serializable]
 public class ComplimentData
@@ -251,8 +338,14 @@ public static class SaveSystem
 }
 ```
 
-## Art Documentation
+## Art Process
 
 ## User Guide
 
 ## Postmortem
+
+## Sources
+
+- [Google Sheets to PHP Tutorial](https://community.spiceworks.com/topic/1290489-use-google-spreadsheet-as-data-source-for-webpage)
+- [PHP to Unity Tutorial](https://wiki.unity3d.com/index.php/Server_Side_Highscores)
+- [Unity Save/Load System](https://www.youtube.com/watch?v=XOjd_qU2Ido)
