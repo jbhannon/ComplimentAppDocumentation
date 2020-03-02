@@ -1,3 +1,5 @@
+
+
 # Compliment Giver Documentation
 
 Here is where I will document the creation of my Compliment Giver App.
@@ -113,7 +115,7 @@ After completing my project proposal, I received and documented feedback from my
 
 I answered 5 questions for each peer. The questions were:
 
-> 1) ___Can your classmate rearticulate back to you what your project is mainly about in 45 seconds to 1 minute?___
+> 1) ___Can your classmate re-articulate back to you what your project is mainly about in 45 seconds to 1 minute?___
 > 2) ___Do they think your project goals sound feasible?___
 > 3) ___Do they think your multimedia tool goals sound feasible?___
 > 4) ___Are there any multimedia tools they could suggest to you to help you in your project?___
@@ -179,7 +181,22 @@ The responses were as follows:
 </tr>
 </table>
 
-I took their comments and used them to better shape my proposal and reprioritize the way I would delegate my time for different parts of the project.
+I took their comments and used them to better shape my proposal and re-prioritize the way I would delegate my time for different parts of the project.
+
+#### Gant Chart
+
+With the knowledge I gained from the creation of my project proposal and with the feedback I gained from my peers, I needed to create a schedule that I would try to follow in order to stay on track to complete my project in time.
+
+To do this, I created a Gant Chart (template provided by my lab AI: Dinesh Ramaswamy) to attempt to manage my time.
+
+![Gant Chart](images/gant.PNG)
+
+As you can note in the chart above, I made a conscious decision to work on the technical aspects of my project first.
+I did this because I wanted to be sure that I could get my core functions to work before spending time beautifying.
+For this reason, I allotted up until week 9 (right before spring break) to get all technical aspects completed so that I can rest over spring break and polish when I get back.
+I also saved a lot of time at the end of the semester for unforeseen setbacks and a lot of time for polishing so I did not run out of time.
+
+Now with all pre-planning complete, I'm ready to start the production of my project.
 
 ## Technical Process
 
