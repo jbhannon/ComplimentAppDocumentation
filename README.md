@@ -1,5 +1,3 @@
-
-
 # Compliment Giver Documentation
 
 Here is where I will document the creation of my Compliment Giver App.
@@ -204,10 +202,14 @@ Here is where I will document the first half of the creation of this project: th
 
 #### Failures
 
-I started this process
+I started this process by trying to get my hardest mechanic out of the way: how to get information from google sheets into my app. The first thing that came to mind was to try different plugins from the [Unity Asset Store](https://assetstore.unity.com/) that would help me access the Google Sheets API. I wasted about 3 weeks trying these different methods, all of which failed.
 
 ![Google Sheets Try 1](images/googleSheetsTry1.PNG)
+My first plugin I attempted to use was [Google Sheets to Unity](https://assetstore.unity.com/packages/tools/utilities/google-sheets-to-unity-73410). This package was great for certain needs, but not for me. This package optimized the time spent with large groups by allowing information to be stored in google sheets then pulled into the Unity Editor. The problem for me, is that I need this plugin to work in real-time on people's apps, not just in the Unity Editor. So I had to scrap that Unity Project entirely to start over.
+
 ![Google Sheets Try 2](images/googleSheetsTry2.PNG)
+My second plugin I attempted was [XlsxParser](https://assetstore.unity.com/packages/tools/input-management/xlsxparser-80712) which was a plugin designed to parse through spreadsheets. This worked a little for me. I would download my google sheet as a spreadsheet then import it into unity, then use the package to read the sheet and display the different rows of compliments. My problem was that I needed this to work for any given google sheet and I couldn't figure out a way to get a spreadsheet download from any given google sheet so I gave up on this method too and scrapped this Unity project as well.
+
 ![Google Sheets Try 3](images/googleSheetsTry3.PNG)
 
 #### Google Sheets to PHP
