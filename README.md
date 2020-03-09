@@ -1,3 +1,4 @@
+
 # Compliment Giver Documentation
 
 Here is where I will document the creation of my Compliment Giver App.
@@ -9,8 +10,10 @@ In general, each section below will be comprised of various journal-like entries
 - [Introduction](#introduction)
 	- [Project Proposal](#project-proposal)
 	- [Project Proposal Feedback](#project-proposal-feedback)
+	- [Gant Chart](#gant-chart)
 - [Technical Process](#technical-process)
 	- [Failures](#failures)
+	- [A New Approach](#a-new-approach)
 	- [Google Sheets to PHP](#google-sheets-to-php)
 	- [PHP to Unity](#php-to-unity)
 	- [Save System](#save-system)
@@ -21,7 +24,7 @@ In general, each section below will be comprised of various journal-like entries
 
 ## Introduction
 
-#### Project Proposal
+### Project Proposal
 
 The first work I did for this project was to complete the assignment [_Project Proposal 1_](documentationFiles/projectProposal1.pdf) which was a first draft of my idea for the project I will create in this course (completed January 26th).
 Below I will display my current answers to the various questions.
@@ -107,7 +110,7 @@ but ultimately I hope to make at least an APK to post online so that my friends 
 anyone who wants to use the app can enjoy it and better their relationships or
 friendships.
 
-#### Project Proposal Feedback
+### Project Proposal Feedback
 
 After completing my project proposal, I received and documented feedback from my peers. I will document it below:
 
@@ -181,7 +184,7 @@ The responses were as follows:
 
 I took their comments and used them to better shape my proposal and re-prioritize the way I would delegate my time for different parts of the project.
 
-#### Gant Chart
+### Gant Chart
 
 With the knowledge I gained from the creation of my project proposal and with the feedback I gained from my peers, I needed to create a schedule that I would try to follow in order to stay on track to complete my project in time.
 
@@ -200,7 +203,7 @@ Now with all pre-planning complete, I'm ready to start the production of my proj
 
 Here is where I will document the first half of the creation of this project: the technical process
 
-#### Failures
+### Failures
 
 I started this process by trying to get my hardest mechanic out of the way: how to get information from google sheets into my app. The first thing that came to mind was to try different plugins from the [Unity Asset Store](https://assetstore.unity.com/) that would help me access the Google Sheets API. I wasted about 3 weeks trying these different methods, all of which failed.
 
@@ -211,8 +214,22 @@ My first plugin I attempted to use was [Google Sheets to Unity](https://assetsto
 My second plugin I attempted was [XlsxParser](https://assetstore.unity.com/packages/tools/input-management/xlsxparser-80712) which was a plugin designed to parse through spreadsheets. This worked a little for me. I would download my google sheet as a spreadsheet then import it into unity, then use the package to read the sheet and display the different rows of compliments. My problem was that I needed this to work for any given google sheet and I couldn't figure out a way to get a spreadsheet download from any given google sheet so I gave up on this method too and scrapped this Unity project as well.
 
 ![Google Sheets Try 3](images/googleSheetsTry3.PNG)
+My third and final plugin I attempted to use was [MetaSheets Free](https://assetstore.unity.com/packages/tools/utilities/metasheets-free-94656) which I thought would assist in integrating the xlsx files into my project, and the plugin did work to an extent. The plugin would look at xlsx documents and help coding in visual studio by giving helpful code snippets and column names. Again, I ran into the issue that this only helped me if I could find a way to download xlsx documents and save them from google sheets.
 
-#### Google Sheets to PHP
+### A New Approach
+
+So none of the plugins that I was using worked out for me, so it was time to choose a new approach.
+For my capstone project (my final project-based course for my Informatics degree) I needed to access a database while using Unity in real-time and I stumbled upon the use of calling a website with C#, writing that website in PHP to access a database and display certain needed information, then using C# to read and parse through that PHP page to use in-game.
+
+This got me thinking about whether PHP can access Google Sheets and print out entries which, turns out, it can! This gave me the idea of how I would get my core functionality into my game.
+
+I would write PHP code to parse through a given URL and display the columns.
+I would then write C# code that would be able to construct a website URL to view, then parse through the content on that page and separate the content into individual compliments.
+
+Now let's get into how I actually developed this functionality!
+
+
+### Google Sheets to PHP
 
 [Google Sheets to PHP Tutorial](https://community.spiceworks.com/topic/1290489-use-google-spreadsheet-as-data-source-for-webpage)
 
@@ -231,7 +248,7 @@ else
     die("Problem reading csv");
 ```
 
-#### PHP to Unity
+### PHP to Unity
 [PHP to Unity Tutorial](https://wiki.unity3d.com/index.php/Server_Side_Highscores)
 ```C#
  IEnumerator Display()
@@ -304,7 +321,7 @@ public class ComplimentList : MonoBehaviour
 }
 ```
 
-#### Save System
+### Save System
 [Unity Save/Load System](https://www.youtube.com/watch?v=XOjd_qU2Ido)
 
 ```C#
