@@ -16,7 +16,9 @@ In general, each section below will be comprised of various journal-like entries
 	- [A New Approach](#a-new-approach)
 	- [Google Sheets to PHP](#google-sheets-to-php)
 	- [PHP to Unity](#php-to-unity)
+	- [Random Compliments](#random-compliments)
 	- [Save System](#save-system)
+- [Mid-semester Check-in](#mid-semester-check-in)
 - [Art Process](#art-process)
 - [User Guide](#user-guide)
 - [Postmortem](#postmortem)
@@ -231,7 +233,13 @@ Now let's get into how I actually developed this functionality!
 
 ### Google Sheets to PHP
 
-[Google Sheets to PHP Tutorial](https://community.spiceworks.com/topic/1290489-use-google-spreadsheet-as-data-source-for-webpage)
+So I began by writing the PHP code that I would need to access Google Sheets, parse through a page, then display each of the entries separated by new lines.
+I used this page -> [Google Sheets to PHP Tutorial](https://community.spiceworks.com/topic/1290489-use-google-spreadsheet-as-data-source-for-webpage) to understand the way that I properly access and parse through a Google Sheet and then edited the code slightly so that I would easily be able to parse through the lines inside of Unity.
+
+Also required to make this work, I had to publish my example Google Sheet page and get the *.csv* share link.
+This means that I will have to include some sort of setup instructions for the users so they know how to use the app.
+
+Here's the first iteration of my PHP code (URL is hard-coded for testing):
 
 ```PHP
 $spreadsheet_url="https://docs.google.com/spreadsheets/d/e/2PACX-1vSHvNJFikAJRxgf2V1Uf2yvMUHq56xKQjlIsVLBBM11gdE6-pKRy2ZpybwLyhn-Ew31bfnUraKdFOYi/pub?gid=0&single=true&output=csv";
@@ -249,7 +257,14 @@ else
 ```
 
 ### PHP to Unity
-[PHP to Unity Tutorial](https://wiki.unity3d.com/index.php/Server_Side_Highscores)
+
+Now that I had a web-page that was accessing and displaying the entries from a Google Sheet, I could now use Unity's UnityWebRequest class to access and parse through that web-page.
+This was the code that I was already familiar with through my work on my capstone project, but here is the original tutorial I used to learn this functionality -> [PHP to Unity Tutorial](https://wiki.unity3d.com/index.php/Server_Side_Highscores).
+
+The code (written in C#) goes to a given URL (my PHP url), checks whether there's a connection issue, if there's not, will create an empty list of strings and fill it with each item in the downloaded text (if it's not empty).
+This means that I now have all of the compliments from a given Google Sheet now saved as a list in Unity.
+
+Here's the C# I used to download and save each compliment into a list:
 ```C#
  IEnumerator Display()
     {
@@ -282,6 +297,18 @@ else
         }
     }
 ```
+
+### Random Compliments
+
+I then had to expand on this code in order to display each compliment randomly.
+I started by just choosing a random item on each click of a button, but this meant that I got a lot of repeated compliments in a row and it took very long to get through the whole list.
+
+To solve this, I made my own code that would ensure that we would iterate through the list of compliments randomly and we would not have repeats.
+My solution was to create a new list, fill it with the compliments, then each time that the code was run, a random compliment from that new list would be used and deleted, then when that list became empty we would fill it once again with all compliments.
+This means that all compliments will be seen before seeing repeats.
+
+The code that I created to randomly choose compliments to display is shown below:
+
 ```C#
 public class ComplimentList : MonoBehaviour
 {
@@ -322,7 +349,20 @@ public class ComplimentList : MonoBehaviour
 ```
 
 ### Save System
-[Unity Save/Load System](https://www.youtube.com/watch?v=XOjd_qU2Ido)
+
+You may have noticed in the last code snippet that I included save/load functions.
+This is because I wanted to be sure that users didn't have to re-download the Google Sheet they were using every time they opened the app.
+
+To solve this problem, I integrated a save/load system that I became familiar with in my capstone project.
+The original tutorial I used to learn how to save/load was this video by Brackeys -> [Unity Save/Load System](https://www.youtube.com/watch?v=XOjd_qU2Ido).
+
+The two code snippets (below) take a list of strings, serialize the list (turn it into 1s and 0s) then save that file as "compliments.fun" into any device.
+To load, the code takes that "compliments.fun" file, de-serialize it, then sets the list of complements to the list found in the saved file.
+
+I also made it so that every time you grab data from a Google Sheet the system saves that list of compliments, and every time the program is started it tries to load an existing list of compliments.
+This means that the compliments would be consistently found on every use of the app.
+
+Here is my save/load code (written in C#):
 
 ```C#
 [System.Serializable]
@@ -374,6 +414,28 @@ public static class SaveSystem
 
 }
 ```
+## Mid-semester Check-in
+
+On February 26th we had a PowerPoint explaining where we were due to show our peers and get input about our current accomplishments and where to go from here.
+You can find the presentation link here -> [Compliment App Check In PowerPoint](documentationFiles/ComplimentAppCheckIn.pptx)
+
+I thought now would be a good time in my documentation to also do a quick summary of where I stand.
+
+I now have all my functionality built into my app that I'll need, the only remaining tasks are to beautify my UI.
+
+Here you can see compliments being displayed, you can place in a new Sheet URL, refresh your compliments, and get a new random compliment:
+
+![Check In image 1](images/checkIn1.PNG)
+
+Here is what my example Google Sheet looks like, all compliments are just listed down the first column:
+
+![Check In image 2](images/checkIn2.PNG)
+
+And here is what the inspector looks like inside of Unity.
+Notice that each compliment is it's own item.
+Also notice that I have two lists, one to store the compliments, one to choose from:
+
+![Check In image 3](images/checkIn3.PNG)
 
 ## Art Process
 
