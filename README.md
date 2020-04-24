@@ -444,20 +444,23 @@ Also notice that I have two lists, one to store the compliments, one to choose f
 ## Art Process
 
 ### Heart
-![Heart](images/heart.png)
-![Heart Process 1](images/heart_process1.png)
-![Heart Process 2](images/heart_process2.png)
+
+<img src="images/heart.png" height="400px"/>
+<img src="images/heart_process1.png" height="400px"/>
+<img src="images/heart_process2.png" height="400px"/>
 
 ### Border
-![Border](images/border.png)
-![Border Process 1](images/border_process1.png)
-![Border Process 2](images/border_process2.png)
+
+<img src="images/border.png" height="400px"/>
+<img src="images/border_process1.png" height="400px"/>
+<img src="images/border_process2.png" height="400px"/>
 
 ### Settings
-![Settings](images/settings.png)
-![Exit](images/x.png)
-![Settings Process 1](images/settings_process1.png)
-![Settings Process 2](images/settings_process2.png)
+
+<img src="images/settings.png" height="400px"/>
+<img src="images/x.png" height="400px"/>
+<img src="images/settings_process1.png" height="400px"/>
+<img src="images/settings_process2.png" height="400px"/>
 
 ### In Game
 
