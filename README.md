@@ -20,6 +20,10 @@ In general, each section below will be comprised of various journal-like entries
 	- [Save System](#save-system)
 - [Mid-semester Check-in](#mid-semester-check-in)
 - [Art Process](#art-process)
+	- [Heart](#heart)
+	- [Border](#border)
+	- [Settings](#settings)
+	- [In Game](#in-game)
 - [User Guide](#user-guide)
 - [Postmortem](#postmortem)
 
@@ -438,6 +442,24 @@ Also notice that I have two lists, one to store the compliments, one to choose f
 ![Check In image 3](images/checkIn3.PNG)
 
 ## Art Process
+
+### Heart
+![Heart](images/heart.png)
+![Heart Process 1](images/heart_process1.png)
+![Heart Process 2](images/heart_process2.png)
+
+### Border
+![Border](images/border.png)
+![Border Process 1](images/border_process1.png)
+![Border Process 2](images/border_process2.png)
+
+### Settings
+![Settings](images/settings.png)
+![Exit](images/x.png)
+![Settings Process 1](images/settings_process1.png)
+![Settings Process 2](images/settings_process2.png)
+
+### In Game
 
 ## User Guide
 
