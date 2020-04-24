@@ -26,6 +26,7 @@ In general, each section below will be comprised of various journal-like entries
 	- [In Game](#in-game)
 - [User Guide](#user-guide)
 - [Postmortem](#postmortem)
+- [Sources](#sources)
 
 
 ## Introduction
@@ -467,6 +468,10 @@ Also notice that I have two lists, one to store the compliments, one to choose f
 ## User Guide
 
 ## Postmortem
+
+This project, the Compliment App is all providing human connection, even when you cannot be there physically. It is all about finding that one person that keeps you happy and being able to get asynchronous affection from them. I have a hard time with depression many times stemming from a feeling of not being seen or acknowledged, and many times what I need is to feel some sort of affection, usually words of affirmation if I can’t have physical contact. Though one of the issues with living like this is that you cannot always get someone else’s attention when you need it. We also have to realize here that it is selfish to rely on others to set aside time to give you affection when they have busy lives and are probably struggling with many of the same issues that we are. So, with the creation of this app, it was important to me that I created a way to provide a way to give and receive affection asynchronously, allowing the users to receive affection at any time.
+
+Also important to me was human connection and a way to surpass distance. I did not want to just create a random compliment generator, I wanted to make sure that people were getting customized messages. What better way to get customized compliments than to receive them from someone who knows the intended user? I also wanted a way for the users to receive compliments from any distance. What is so weird is that all of this was my internal reasoning at the beginning of the semester, and then COVID-19 came along and multiplied all these needs by 10. I think we are all feeling negative impacts of social distancing which makes the need for affection and affirmation that much more important. Personally, I have missed my significant other for the duration of entering self-isolation and have greatly needed some way to stay connected, even when we’re both busy with schoolwork.
 
 ## Sources
 
