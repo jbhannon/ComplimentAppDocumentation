@@ -446,22 +446,22 @@ Also notice that I have two lists, one to store the compliments, one to choose f
 
 ### Heart
 
-<img src="images/heart.png" height="400px"/>
-<img src="images/heart_process1.png" height="400px"/>
-<img src="images/heart_process2.png" height="400px"/>
+<img src="images/heart.png" height="500px"/>
+<img src="images/heart_process1.png" height="500px"/>
+<img src="images/heart_process2.png" height="500px"/>
 
 ### Border
 
-<img src="images/border.png" height="400px"/>
-<img src="images/border_process1.png" height="400px"/>
-<img src="images/border_process2.png" height="400px"/>
+<img src="images/border.png" height="500px"/>
+<img src="images/border_process1.png" height="500px"/>
+<img src="images/border_process2.png" height="500px"/>
 
 ### Settings
 
-<img src="images/settings.png" height="400px"/>
-<img src="images/x.png" height="400px"/>
-<img src="images/settings_process1.png" height="400px"/>
-<img src="images/settings_process2.png" height="400px"/>
+<img src="images/settings.png" height="500px"/>
+<img src="images/x.png" height="500px"/>
+<img src="images/settings_process1.png" height="500px"/>
+<img src="images/settings_process2.png" height="500px"/>
 
 ### In Game
 
