@@ -20,6 +20,7 @@ In general, each section below will be comprised of various journal-like entries
 	- [Random Compliments](#random-compliments)
 	- [Save System](#save-system)
 - [Mid-semester Check-in](#mid-semester-check-in)
+- [COVID-19](#covid-19)
 - [Art Process](#art-process)
 	- [Heart](#heart)
 	- [Border](#border)
@@ -533,9 +534,27 @@ Here's what the characters looked like:
 
 ### In Game
 
+The button was pretty easy to put in, all it was was an image that was a ray-cast target (allows users to press it) and a button component which allowed me to tell the program what to do when I pressed the heart.
 
+I also implemented the border, which involved putting the image as the background of a panel, telling it to tile the edges, then adjusting how many times it would repeat.
+
+Here's the setup for my border:
+
+![In-game 3](images/inGame3.png)
+
+I then put all of these items together with the initial setup that I already displayed earlier in the documentation. I had to re-place the button, reorganize the hierarchy, etc.
+
+Here's what the hierarchy now looked like:
+
+![In-game 2](images/inGame2.png)
+
+And here's what the actual in-game view looks like now:
+
+![In-game 1](images/inGame1.png)
 
 ## User Guide
+
+![In-game 4](images/inGame4.png)
 
 ## Postmortem
 
