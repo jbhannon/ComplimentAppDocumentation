@@ -475,16 +475,47 @@ Here is the heart asset that I ended up creating:
 
 ### Border
 
-<img src="images/border.png" height="500px"/>
-<img src="images/border_process1.png" height="500px"/>
+Similar to the heart button, I really wanted to lean into the lovey-dovey feeling of the app, and I knew I wanted to add a border to the application. I also knew that Unity allows you to import a sprite and define a border and corners that can then be tiled.
+
+So I set out to create a border that was intertwining, giving the feeling of love and togetherness. I experimented with this for a while but finally decided on a pattern of lines. I then gave those lines a border and expanded the object. I also put hearts wherever the lines met
+
+Here's what I came up with:
+
 <img src="images/border_process2.png" height="500px"/>
+
+I then added color to the lines and borders, making sure that I was staying with the color palette that I had earlier defined with my heart button.
+
+Here's what I came up with:
+
+<img src="images/border_process1.png" height="500px"/>
+
+And here's how the exported asset came out:
+
+<img src="images/border.png" height="500px"/>
 
 ### Settings
 
-<img src="images/settings.png" height="500px"/>
-<img src="images/x.png" height="500px"/>
-<img src="images/settings_process1.png" height="500px"/>
+So with a good portion of my art done, I now needed a couple UI icons for the settings menu and the exit button (to get out of the settings menu). I knew that I had to keep these pretty minimalist to match the rest of the app, so I messed around for a bit until I discovered a way to make the cog icon. I took 4 rectangles and rotated them to look like an X and a + put together, I then combined them with a large circle and then cut a smaller circle out of the middle.
+
+While I was at it, I also created an X out of just two of the rectangles combined together.
+
+Here's what it looked like without color:
+
 <img src="images/settings_process2.png" height="500px"/>
+
+I knew that I could change white to any color within unity, so I decided to keep the fill of these icons white so they would be able to be customized in the game. I also thought dark gray borders would go with any color that I ended up deciding to go with in Unity.
+
+Here's what they looked like with color:
+
+<img src="images/settings_process1.png" height="500px"/>
+
+So here's what the settings cog looked like exported:
+
+<img src="images/settings.png" height="500px"/>
+
+And here's what the X looked like exported:
+
+<img src="images/x.png" height="500px"/>
 
 ### In Game
 
