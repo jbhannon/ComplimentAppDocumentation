@@ -1,4 +1,5 @@
 
+
 # Compliment Giver Documentation
 
 Here is where I will document the creation of my Compliment Giver App.
@@ -442,13 +443,35 @@ Also notice that I have two lists, one to store the compliments, one to choose f
 
 ![Check In image 3](images/checkIn3.PNG)
 
+## COVID-19
+
+Here is where I was in my process of creating this app when COVID-19 caused a great disruption in my life. I spent the extended spring break locked in a single room, only exiting to quickly get food from the store and come back. When school started back up, I only lasted about a week before having a mental breakdown and subsequently traveling back home to quarantine with my family.
+
+These shifts in my mental state and my environment severely impacted my work ethic so I wasn't able to complete as much as I intended to. Along with that, I also lost access to a mac (which I needed to build this app onto my phone) and lost access to any powerful computers (which caused a much slower process and a lot of computer crashes)
+
+Overall, COVID-19 caused me to scale back my project a bit for the back half. I'll now discuss that back half of the project below.
+
 ## Art Process
+
+Below I will go through each of the art assets that I created for the app, and then I will discuss how they all came together to create the aesthetics of the game.
 
 ### Heart
 
-<img src="images/heart.png" height="500px"/>
-<img src="images/heart_process1.png" height="500px"/>
+The first thing that I wanted to create was the custom button that users would be pressing for each new compliment. From the research that I conducted during lab time, I knew that users wanted the graphics to be centered more around love than platonic friendship. Knowing that, I really leaned into the lovey-dovey graphics and made a big heart button to press.
+
+I created the heart with Adobe Illustrator by making a curve that looked like one side of a heart then flipped it horizontally. I took that heart shape and created many different sizes of concentric hearts. I then added some squiggly subdivisions so I could shade to make the heart look 3D.
+
+Here's what the heart looked like with just lines:
+
 <img src="images/heart_process2.png" height="500px"/>
+
+I then filled in the heart with different shades of red to add shape:
+
+<img src="images/heart_process1.png" height="500px"/>
+
+Here is the heart asset that I ended up creating:
+
+<img src="images/heart.png" height="500px"/>
 
 ### Border
 
