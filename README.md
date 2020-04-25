@@ -26,6 +26,7 @@ In general, each section below will be comprised of various journal-like entries
 	- [Border](#border)
 	- [Settings](#settings)
 	- [Font](#font)
+	- [Sound](#sound)
 	- [In Game](#in-game)
 - [User Guide](#user-guide)
 - [Postmortem](#postmortem)
@@ -531,6 +532,9 @@ Here's what the characters looked like:
 
 ![Words of Love Characters](images/wordsOfLove2.png)
 
+### Sound
+
+I also knew that I would need some sound on each click of the heart, so I tooled around a bit with [Chiptone](https://sfbgames.com/chiptone) by SFBGames. I tryed to get something that sounded light and a little fun. I ended up exporting a small .wav and using it in the game on each click of the heart
 
 ### In Game
 
@@ -598,3 +602,4 @@ Here is the postmortem I wrote for the end of this porject. You can also find th
 - [PHP to Unity Tutorial](https://wiki.unity3d.com/index.php/Server_Side_Highscores)
 - [Unity Save/Load System](https://www.youtube.com/watch?v=XOjd_qU2Ido)
 - [Words of Love](https://www.1001fonts.com/words-of-love-font.html) by Pizzadude
+- [Chiptone](https://sfbgames.com/chiptone) by SFBGames
