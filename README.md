@@ -554,7 +554,22 @@ And here's what the actual in-game view looks like now:
 
 ## User Guide
 
+Luckily, the way I setup this app, it's rather easy to use.  I even created a little graphic in the app to explain how to set it up:
+
 ![In-game 4](images/inGame4.png)
+
+So here are the steps:
+
+ 1. Create a Google Sheet and fill the left-most column with compliments*
+ 2. Go to File > Publish to the Web
+ 3. Set the drop-downs to the entire document as .csv
+ 4. You then will either give that link to someone else using the app or paste it yourself
+
+Once you hit "Refresh Database" the app will take a moment to contact the sheet, download, and save the compliments.
+
+Now that it's setup, every time you hit the heart a new compliment will be given to you!
+
+**each compliment has to be longer than one character or it won't be added*
 
 ## Postmortem
 
@@ -582,3 +597,4 @@ Here is the postmortem I wrote for the end of this porject. You can also find th
 - [Google Sheets to PHP Tutorial](https://community.spiceworks.com/topic/1290489-use-google-spreadsheet-as-data-source-for-webpage)
 - [PHP to Unity Tutorial](https://wiki.unity3d.com/index.php/Server_Side_Highscores)
 - [Unity Save/Load System](https://www.youtube.com/watch?v=XOjd_qU2Ido)
+- [Words of Love](https://www.1001fonts.com/words-of-love-font.html) by Pizzadude
