@@ -24,6 +24,7 @@ In general, each section below will be comprised of various journal-like entries
 	- [Heart](#heart)
 	- [Border](#border)
 	- [Settings](#settings)
+	- [Font](#font)
 	- [In Game](#in-game)
 - [User Guide](#user-guide)
 - [Postmortem](#postmortem)
@@ -517,7 +518,22 @@ And here's what the X looked like exported:
 
 <img src="images/x.png" height="500px"/>
 
+### Font
+
+I needed a cutsie font to use in game so I went looking online for a free font to use. I ended up finding the font called [Words of Love](https://www.1001fonts.com/words-of-love-font.html) by Pizzadude.
+
+![Words of Love](images/wordsOfLove1.png)
+
+I thought the characters where really cute and would be perfect in the game. Sadly, there were no numbers in this font and they just turned into stars, but this was a sacrifice I was willing to make for such a cute font.
+
+Here's what the characters looked like:
+
+![Words of Love Characters](images/wordsOfLove2.png)
+
+
 ### In Game
+
+
 
 ## User Guide
 
